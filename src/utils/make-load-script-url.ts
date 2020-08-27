@@ -58,5 +58,5 @@ export function makeLoadScriptUrl({
   params.push('callback=initMap')
 
   // return `https://maps.googleapis.com/maps/api/js?${params.join('&')}`
-  return `https://global.rootcloudservice.com/googleMap/proxy/${googleMapsApiKey}/drawing,geometry/${language}?callback=initMap`
+  return `https://global.irootech.com/googleMap/proxy/${googleMapsApiKey}/drawing,geometry/${language}?callback=initMap`
 }
