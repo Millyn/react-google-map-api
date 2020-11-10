@@ -71,7 +71,7 @@ export declare class GoogleMap extends React.PureComponent<GoogleMapProps, Googl
     state: GoogleMapState;
     registeredEvents: google.maps.MapsEventListener[];
     mapRef: Element | null;
-    getInstance: () => google.maps.Map<Element> | null;
+    getInstance: () => google.maps.Map | null;
     panTo: (latLng: google.maps.LatLng | google.maps.LatLngLiteral) => void;
     setMapCallback: () => void;
     componentDidMount(): void;

@@ -43,9 +43,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-var MapContext =
-/*#__PURE__*/
-createContext(null);
+var MapContext = /*#__PURE__*/createContext(null);
 function useGoogleMap() {
   !!!useContext ? process.env.NODE_ENV !== "production" ? invariant(false, 'useGoogleMap is React hook and requires React version 16.8+') : invariant(false) : void 0;
   var map = useContext(MapContext);
@@ -179,9 +177,7 @@ var updaterMap = {
     map.setZoom(_zoom);
   }
 };
-var GoogleMap =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var GoogleMap = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(GoogleMap, _React$PureComponent);
 
   function GoogleMap() {
@@ -460,7 +456,7 @@ function makeLoadScriptUrl(_ref) {
 
   params.push('callback=initMap'); // return `https://maps.googleapis.com/maps/api/js?${params.join('&')}`
 
-  return "https://global.irootech.com/googleMap/proxy/" + googleMapsApiKey + "/drawing,geometry/" + language + "?callback=initMap";
+  return "https://machinelink.rootcloud.com/googleMap/proxy/" + googleMapsApiKey + "/drawing,geometry/" + language + "?callback=initMap";
 }
 
 var cleaningUp = false;
@@ -472,9 +468,7 @@ var defaultLoadScriptProps = {
   version: 'weekly'
 };
 
-var LoadScript =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var LoadScript = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(LoadScript, _React$PureComponent);
 
   function LoadScript() {
@@ -742,9 +736,7 @@ function useLoadScript(_ref) {
   };
 }
 
-var defaultLoadingElement =
-/*#__PURE__*/
-createElement(DefaultLoadingElement, null);
+var defaultLoadingElement = /*#__PURE__*/createElement(DefaultLoadingElement, null);
 
 function LoadScriptNext(_ref) {
   var loadingElement = _ref.loadingElement,
@@ -778,8 +770,7 @@ function LoadScriptNext(_ref) {
   return isLoaded ? children : loadingElement || defaultLoadingElement;
 }
 
-var LoadScriptNext$1 = /*#__PURE__*/
-memo(LoadScriptNext);
+var LoadScriptNext$1 = /*#__PURE__*/memo(LoadScriptNext);
 
 var eventMap$1 = {};
 var updaterMap$1 = {
@@ -787,9 +778,7 @@ var updaterMap$1 = {
     instance.setOptions(_options);
   }
 };
-var TrafficLayer =
-/*#__PURE__*/
-function (_PureComponent) {
+var TrafficLayer = /*#__PURE__*/function (_PureComponent) {
   _inheritsLoose(TrafficLayer, _PureComponent);
 
   function TrafficLayer() {
@@ -870,9 +859,7 @@ function (_PureComponent) {
 }(PureComponent);
 TrafficLayer.contextType = MapContext;
 
-var BicyclingLayer =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var BicyclingLayer = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(BicyclingLayer, _React$PureComponent);
 
   function BicyclingLayer() {
@@ -934,9 +921,7 @@ function (_React$PureComponent) {
 }(PureComponent);
 BicyclingLayer.contextType = MapContext;
 
-var TransitLayer =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var TransitLayer = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(TransitLayer, _React$PureComponent);
 
   function TransitLayer() {
@@ -1014,9 +999,7 @@ var updaterMap$2 = {
     instance.setOptions(_options);
   }
 };
-var DrawingManager =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var DrawingManager = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(DrawingManager, _React$PureComponent);
 
   function DrawingManager(props) {
@@ -1157,9 +1140,7 @@ var updaterMap$3 = {
     instance.setZIndex(_zIndex);
   }
 };
-var Marker =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var Marker = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(Marker, _React$PureComponent);
 
   function Marker() {
@@ -1183,7 +1164,7 @@ function (_React$PureComponent) {
   var _proto = Marker.prototype;
 
   _proto.componentDidMount = function componentDidMount() {
-    var markerOptions = _extends({}, this.props.options || {}, {}, this.props.clusterer ? {} : {
+    var markerOptions = _extends({}, this.props.options || {}, this.props.clusterer ? {} : {
       map: this.context
     }, {
       position: this.props.position
@@ -1323,9 +1304,7 @@ var updaterMap$4 = {
     instance.setZoomOnClick(_zoomOnClick);
   }
 };
-var ClustererComponent =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var ClustererComponent = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(ClustererComponent, _React$PureComponent);
 
   function ClustererComponent() {
@@ -1425,9 +1404,7 @@ var updaterMap$5 = {
     instance.setZIndex(_zIndex);
   }
 };
-var InfoBoxComponent =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var InfoBoxComponent = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(InfoBoxComponent, _React$PureComponent);
 
   function InfoBoxComponent() {
@@ -1485,7 +1462,7 @@ function (_React$PureComponent) {
       positionLatLng = new google.maps.LatLng(position.lat, position.lng);
     }
 
-    var infoBox = new InfoBox(_extends({}, infoBoxOptions, {}, positionLatLng ? {
+    var infoBox = new InfoBox(_extends({}, infoBoxOptions, positionLatLng ? {
       position: positionLatLng
     } : {}));
     this.containerElement = document.createElement('div');
@@ -1560,9 +1537,7 @@ var updaterMap$6 = {
     instance.setZIndex(_zIndex);
   }
 };
-var InfoWindow =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var InfoWindow = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(InfoWindow, _React$PureComponent);
 
   function InfoWindow() {
@@ -1680,9 +1655,7 @@ var updaterMap$7 = {
     instance.setVisible(_visible);
   }
 };
-var Polyline =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var Polyline = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(Polyline, _React$PureComponent);
 
   function Polyline() {
@@ -1791,9 +1764,7 @@ var updaterMap$8 = {
     instance.setVisible(_visible);
   }
 };
-var Polygon =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var Polygon = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(Polygon, _React$PureComponent);
 
   function Polygon() {
@@ -1900,9 +1871,7 @@ var updaterMap$9 = {
     instance.setVisible(_visible);
   }
 };
-var Rectangle =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var Rectangle = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(Rectangle, _React$PureComponent);
 
   function Rectangle() {
@@ -2013,9 +1982,7 @@ var updaterMap$a = {
     instance.setVisible(_visible);
   }
 };
-var Circle =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var Circle = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(Circle, _React$PureComponent);
 
   function Circle() {
@@ -2146,9 +2113,7 @@ var updaterMap$b = {
     instance.toGeoJson(callback);
   }
 };
-var Data =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var Data = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(Data, _React$PureComponent);
 
   function Data() {
@@ -2240,9 +2205,7 @@ var updaterMap$c = {
     instance.setZIndex(_zIndex);
   }
 };
-var KmlLayer =
-/*#__PURE__*/
-function (_PureComponent) {
+var KmlLayer = /*#__PURE__*/function (_PureComponent) {
   _inheritsLoose(KmlLayer, _PureComponent);
 
   function KmlLayer() {
@@ -2375,9 +2338,7 @@ var getLayoutStyles = function getLayoutStyles(mapCanvasProjection, offset, boun
   return bounds !== undefined ? getLayoutStylesByBounds(mapCanvasProjection, offset, ensureOfType(bounds, google.maps.LatLngBounds, createLatLngBounds)) : getLayoutStylesByPosition(mapCanvasProjection, offset, ensureOfType(position, google.maps.LatLng, createLatLng));
 };
 
-var ContentMountHandler =
-/*#__PURE__*/
-function (_React$Component) {
+var ContentMountHandler = /*#__PURE__*/function (_React$Component) {
   _inheritsLoose(ContentMountHandler, _React$Component);
 
   function ContentMountHandler() {
@@ -2417,9 +2378,7 @@ function convertToLatLngBoundsString(latLngBoundsLike) {
   return latLngBounds + '';
 }
 
-var OverlayView =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var OverlayView = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(OverlayView, _React$PureComponent);
 
   function OverlayView(props) {
@@ -2558,9 +2517,7 @@ var updaterMap$d = {
     instance.setOpacity(_opacity);
   }
 };
-var GroundOverlay =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var GroundOverlay = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(GroundOverlay, _React$PureComponent);
 
   function GroundOverlay() {
@@ -2648,9 +2605,7 @@ var updaterMap$e = {
     instance.setOptions(_options);
   }
 };
-var HeatmapLayer =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var HeatmapLayer = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(HeatmapLayer, _React$PureComponent);
 
   function HeatmapLayer() {
@@ -2763,9 +2718,7 @@ var updaterMap$f = {
     instance.setZoom(_zoom);
   }
 };
-var StreetViewPanorama =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var StreetViewPanorama = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(StreetViewPanorama, _React$PureComponent);
 
   function StreetViewPanorama() {
@@ -2836,9 +2789,7 @@ function (_React$PureComponent) {
 }(PureComponent);
 StreetViewPanorama.contextType = MapContext;
 
-var StreetViewService =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var StreetViewService = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(StreetViewService, _React$PureComponent);
 
   function StreetViewService() {
@@ -2885,9 +2836,7 @@ function (_React$PureComponent) {
 }(PureComponent);
 StreetViewService.contextType = MapContext;
 
-var DirectionsService =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var DirectionsService = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(DirectionsService, _React$PureComponent);
 
   function DirectionsService() {
@@ -2960,9 +2909,7 @@ var updaterMap$g = {
     instance.setRouteIndex(_routeIndex);
   }
 };
-var DirectionsRenderer =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var DirectionsRenderer = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(DirectionsRenderer, _React$PureComponent);
 
   function DirectionsRenderer() {
@@ -3040,9 +2987,7 @@ function (_React$PureComponent) {
 }(PureComponent);
 DirectionsRenderer.contextType = MapContext;
 
-var DistanceMatrixService =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var DistanceMatrixService = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(DistanceMatrixService, _React$PureComponent);
 
   function DistanceMatrixService() {
@@ -3104,9 +3049,7 @@ var updaterMap$h = {
   }
 };
 
-var StandaloneSearchBox =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var StandaloneSearchBox = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(StandaloneSearchBox, _React$PureComponent);
 
   function StandaloneSearchBox() {
@@ -3208,9 +3151,7 @@ var updaterMap$i = {
     instance.setTypes(_types);
   }
 };
-var Autocomplete =
-/*#__PURE__*/
-function (_React$PureComponent) {
+var Autocomplete = /*#__PURE__*/function (_React$PureComponent) {
   _inheritsLoose(Autocomplete, _React$PureComponent);
 
   function Autocomplete() {

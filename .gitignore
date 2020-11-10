@@ -60,3 +60,4 @@ lib/
 googleMapKey.js
 
 .rts2_cache*
+yarn.lock

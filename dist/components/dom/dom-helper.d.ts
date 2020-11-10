@@ -12,6 +12,6 @@ export declare const getLayoutStyles: (mapCanvasProjection: google.maps.MapCanva
 }, bounds?: google.maps.LatLngBounds | google.maps.LatLngBoundsLiteral | undefined, position?: google.maps.LatLng | google.maps.LatLngLiteral | undefined) => {
     left: string;
     top: string;
-    width?: string | undefined;
-    height?: string | undefined;
+    width?: string;
+    height?: string;
 };

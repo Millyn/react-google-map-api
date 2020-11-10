@@ -45,9 +45,7 @@
     return target;
   }
 
-  var MapContext =
-  /*#__PURE__*/
-  React.createContext(null);
+  var MapContext = /*#__PURE__*/React.createContext(null);
   function useGoogleMap() {
     !!!React.useContext ?  invariant(false, 'useGoogleMap is React hook and requires React version 16.8+')  : void 0;
     var map = React.useContext(MapContext);
@@ -181,9 +179,7 @@
       map.setZoom(_zoom);
     }
   };
-  var GoogleMap =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var GoogleMap = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(GoogleMap, _React$PureComponent);
 
     function GoogleMap() {
@@ -462,7 +458,7 @@
 
     params.push('callback=initMap'); // return `https://maps.googleapis.com/maps/api/js?${params.join('&')}`
 
-    return "https://global.irootech.com/googleMap/proxy/" + googleMapsApiKey + "/drawing,geometry/" + language + "?callback=initMap";
+    return "https://machinelink.rootcloud.com/googleMap/proxy/" + googleMapsApiKey + "/drawing,geometry/" + language + "?callback=initMap";
   }
 
   var cleaningUp = false;
@@ -474,9 +470,7 @@
     version: 'weekly'
   };
 
-  var LoadScript =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var LoadScript = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(LoadScript, _React$PureComponent);
 
     function LoadScript() {
@@ -744,9 +738,7 @@
     };
   }
 
-  var defaultLoadingElement =
-  /*#__PURE__*/
-  React.createElement(DefaultLoadingElement, null);
+  var defaultLoadingElement = /*#__PURE__*/React.createElement(DefaultLoadingElement, null);
 
   function LoadScriptNext(_ref) {
     var loadingElement = _ref.loadingElement,
@@ -780,8 +772,7 @@
     return isLoaded ? children : loadingElement || defaultLoadingElement;
   }
 
-  var LoadScriptNext$1 = /*#__PURE__*/
-  React.memo(LoadScriptNext);
+  var LoadScriptNext$1 = /*#__PURE__*/React.memo(LoadScriptNext);
 
   var eventMap$1 = {};
   var updaterMap$1 = {
@@ -789,9 +780,7 @@
       instance.setOptions(_options);
     }
   };
-  var TrafficLayer =
-  /*#__PURE__*/
-  function (_PureComponent) {
+  var TrafficLayer = /*#__PURE__*/function (_PureComponent) {
     _inheritsLoose(TrafficLayer, _PureComponent);
 
     function TrafficLayer() {
@@ -872,9 +861,7 @@
   }(React.PureComponent);
   TrafficLayer.contextType = MapContext;
 
-  var BicyclingLayer =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var BicyclingLayer = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(BicyclingLayer, _React$PureComponent);
 
     function BicyclingLayer() {
@@ -936,9 +923,7 @@
   }(React.PureComponent);
   BicyclingLayer.contextType = MapContext;
 
-  var TransitLayer =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var TransitLayer = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(TransitLayer, _React$PureComponent);
 
     function TransitLayer() {
@@ -1016,9 +1001,7 @@
       instance.setOptions(_options);
     }
   };
-  var DrawingManager =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var DrawingManager = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(DrawingManager, _React$PureComponent);
 
     function DrawingManager(props) {
@@ -1159,9 +1142,7 @@
       instance.setZIndex(_zIndex);
     }
   };
-  var Marker =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var Marker = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(Marker, _React$PureComponent);
 
     function Marker() {
@@ -1185,7 +1166,7 @@
     var _proto = Marker.prototype;
 
     _proto.componentDidMount = function componentDidMount() {
-      var markerOptions = _extends({}, this.props.options || {}, {}, this.props.clusterer ? {} : {
+      var markerOptions = _extends({}, this.props.options || {}, this.props.clusterer ? {} : {
         map: this.context
       }, {
         position: this.props.position
@@ -1325,9 +1306,7 @@
       instance.setZoomOnClick(_zoomOnClick);
     }
   };
-  var ClustererComponent =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var ClustererComponent = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(ClustererComponent, _React$PureComponent);
 
     function ClustererComponent() {
@@ -1427,9 +1406,7 @@
       instance.setZIndex(_zIndex);
     }
   };
-  var InfoBoxComponent =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var InfoBoxComponent = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(InfoBoxComponent, _React$PureComponent);
 
     function InfoBoxComponent() {
@@ -1487,7 +1464,7 @@
         positionLatLng = new google.maps.LatLng(position.lat, position.lng);
       }
 
-      var infoBox = new infobox.InfoBox(_extends({}, infoBoxOptions, {}, positionLatLng ? {
+      var infoBox = new infobox.InfoBox(_extends({}, infoBoxOptions, positionLatLng ? {
         position: positionLatLng
       } : {}));
       this.containerElement = document.createElement('div');
@@ -1562,9 +1539,7 @@
       instance.setZIndex(_zIndex);
     }
   };
-  var InfoWindow =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var InfoWindow = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(InfoWindow, _React$PureComponent);
 
     function InfoWindow() {
@@ -1682,9 +1657,7 @@
       instance.setVisible(_visible);
     }
   };
-  var Polyline =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var Polyline = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(Polyline, _React$PureComponent);
 
     function Polyline() {
@@ -1793,9 +1766,7 @@
       instance.setVisible(_visible);
     }
   };
-  var Polygon =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var Polygon = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(Polygon, _React$PureComponent);
 
     function Polygon() {
@@ -1902,9 +1873,7 @@
       instance.setVisible(_visible);
     }
   };
-  var Rectangle =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var Rectangle = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(Rectangle, _React$PureComponent);
 
     function Rectangle() {
@@ -2015,9 +1984,7 @@
       instance.setVisible(_visible);
     }
   };
-  var Circle =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var Circle = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(Circle, _React$PureComponent);
 
     function Circle() {
@@ -2148,9 +2115,7 @@
       instance.toGeoJson(callback);
     }
   };
-  var Data =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var Data = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(Data, _React$PureComponent);
 
     function Data() {
@@ -2242,9 +2207,7 @@
       instance.setZIndex(_zIndex);
     }
   };
-  var KmlLayer =
-  /*#__PURE__*/
-  function (_PureComponent) {
+  var KmlLayer = /*#__PURE__*/function (_PureComponent) {
     _inheritsLoose(KmlLayer, _PureComponent);
 
     function KmlLayer() {
@@ -2377,9 +2340,7 @@
     return bounds !== undefined ? getLayoutStylesByBounds(mapCanvasProjection, offset, ensureOfType(bounds, google.maps.LatLngBounds, createLatLngBounds)) : getLayoutStylesByPosition(mapCanvasProjection, offset, ensureOfType(position, google.maps.LatLng, createLatLng));
   };
 
-  var ContentMountHandler =
-  /*#__PURE__*/
-  function (_React$Component) {
+  var ContentMountHandler = /*#__PURE__*/function (_React$Component) {
     _inheritsLoose(ContentMountHandler, _React$Component);
 
     function ContentMountHandler() {
@@ -2419,9 +2380,7 @@
     return latLngBounds + '';
   }
 
-  var OverlayView =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var OverlayView = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(OverlayView, _React$PureComponent);
 
     function OverlayView(props) {
@@ -2560,9 +2519,7 @@
       instance.setOpacity(_opacity);
     }
   };
-  var GroundOverlay =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var GroundOverlay = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(GroundOverlay, _React$PureComponent);
 
     function GroundOverlay() {
@@ -2650,9 +2607,7 @@
       instance.setOptions(_options);
     }
   };
-  var HeatmapLayer =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var HeatmapLayer = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(HeatmapLayer, _React$PureComponent);
 
     function HeatmapLayer() {
@@ -2765,9 +2720,7 @@
       instance.setZoom(_zoom);
     }
   };
-  var StreetViewPanorama =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var StreetViewPanorama = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(StreetViewPanorama, _React$PureComponent);
 
     function StreetViewPanorama() {
@@ -2838,9 +2791,7 @@
   }(React.PureComponent);
   StreetViewPanorama.contextType = MapContext;
 
-  var StreetViewService =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var StreetViewService = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(StreetViewService, _React$PureComponent);
 
     function StreetViewService() {
@@ -2887,9 +2838,7 @@
   }(React.PureComponent);
   StreetViewService.contextType = MapContext;
 
-  var DirectionsService =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var DirectionsService = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(DirectionsService, _React$PureComponent);
 
     function DirectionsService() {
@@ -2962,9 +2911,7 @@
       instance.setRouteIndex(_routeIndex);
     }
   };
-  var DirectionsRenderer =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var DirectionsRenderer = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(DirectionsRenderer, _React$PureComponent);
 
     function DirectionsRenderer() {
@@ -3042,9 +2989,7 @@
   }(React.PureComponent);
   DirectionsRenderer.contextType = MapContext;
 
-  var DistanceMatrixService =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var DistanceMatrixService = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(DistanceMatrixService, _React$PureComponent);
 
     function DistanceMatrixService() {
@@ -3106,9 +3051,7 @@
     }
   };
 
-  var StandaloneSearchBox =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var StandaloneSearchBox = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(StandaloneSearchBox, _React$PureComponent);
 
     function StandaloneSearchBox() {
@@ -3210,9 +3153,7 @@
       instance.setTypes(_types);
     }
   };
-  var Autocomplete =
-  /*#__PURE__*/
-  function (_React$PureComponent) {
+  var Autocomplete = /*#__PURE__*/function (_React$PureComponent) {
     _inheritsLoose(Autocomplete, _React$PureComponent);
 
     function Autocomplete() {
